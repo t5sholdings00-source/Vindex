@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>T5S Vindex · Real Estate</title>
-  <link rel="icon" type="image/png" href="assets/llogo nb.png">
+  <link rel="icon" type="image/png" href="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
@@ -250,7 +249,7 @@ window.addEventListener('load', async () => {
     redirect.classList.remove('show');
     navUserBtn.classList.remove('show');
     if (!signInMounted) {
-      Clerk.mountSignIn(signInEl, { appearance: clerkAppearance, routing: 'virtual' });
+      Clerk.mountSignIn(signInEl, { appearance: clerkAppearance, routing: 'hash' });
       signInMounted = true;
     }
   }
@@ -284,5 +283,6 @@ window.addEventListener('load', async () => {
   });
 });
 </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"57d5cd2fcb53490c8c986ef27590d71d","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
